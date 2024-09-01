@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Clone Practice</title>
+  <link href="../output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="sideBar"
+    class="w-[300px] min-h-[100vh] bg-gray-100 fixed left-0 transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="border-b-2 border-gray-500 flex justify-between items-center p-6 text-2xl font-semibold">
+      Menu
+      <i class="fa-regular fa-circle-xmark cursor-pointer" onclick="hideSidebar()"></i>
+    </div>
+  </div>
+  <div class="container mx-auto min-h-screen flex flex-col justify-between">
+    <div>
+      <div class="flex justify-between py-2 lg:py-0 px-4  items-center ">
+        <div class="flex gap-8 items-center">
+          <div class="lg:hidden flex items-center gap-2"> <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+            <a href="./../index.html">Home</a>
+          </div>
+          <div class="hidden lg:block text-3xl font-semibold text-red-500 mb-2 cursor-pointer"><a
+              href="./../index.html">Logo</a></div>
+          <div class="hidden lg:flex uppercase  items-center font-semibold text-base gap-4">
+            <div class="cursor-pointer border-b-2 py-4 border-transparent hover:border-black">Men</div>
+            <div class="cursor-pointer border-b-2 py-4 border-transparent hover:border-black">Women</div>
+            <div class="cursor-pointer border-b-2 py-4 border-transparent hover:border-black">Kids</div>
+            <div class="cursor-pointer border-b-2 py-4 border-transparent hover:border-black">Home & Living</div>
+            <div class="cursor-pointer border-b-2 py-4 border-transparent hover:border-black">Beauty</div>
+            <div class="cursor-pointer border-b-2 py-4 border-transparent hover:border-black">Studio</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-5">
+          <div class="flex gap-2 bg-red-500 text-white rounded p-1 px-2 items-center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="pl-1 outline-none bg-red-500">
+          </div>
+          <div class="flex gap-4 text-blue-500 text-xl ">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <div class="flex items-center relative"> <i class="fa-solid fa-bag-shopping"></i>
+              <div id="bag-qty"
+                class="absolute bg-red-500 p-2 text-xs rounded-full w-5 h-5 flex items-center justify-center text-white -top-3 -right-2">
+                0
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-5">
+        <div id="item-cart-container" class="lg:col-span-2 h-full  flex flex-col gap-4 p-4">
+        </div>
+        <div id="billing-summary-container" class="border border-gray-400 flex flex-col gap-1 p-4 h-[300px]">
+
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 p-4 gap-4 bg-gray-900 text-white">
+      <div class="flex flex-col">
+        <div class="flex flex-col gap-2 mb-4">
+          <div class="font-bold text-lg">Category</div>
+          <div class="border-b-2 border-red-500 w-[50%]"></div>
+        </div>
+        <div class="flex flex-col gap-2 text-base uppercase font-semibold">
+          <div>Join Us</div>
+          <div>Career</div>
+          <div>Services</div>
+          <div>Subscription Packages</div>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-col gap-2 mb-4">
+          <div class="font-bold text-lg">Category</div>
+          <div class="border-b-2 border-red-500 w-[50%]"></div>
+        </div>
+        <div class="flex flex-col gap-2 text-base uppercase font-semibold">
+          <div>Join Us</div>
+          <div>Career</div>
+          <div>Services</div>
+          <div>Subscription Packages</div>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-col gap-2 mb-4">
+          <div class="font-bold text-lg">Category</div>
+          <div class="border-b-2 border-red-500 w-[50%]"></div>
+        </div>
+        <div class="flex flex-col gap-2 text-base uppercase font-semibold">
+          <div>Join Us</div>
+          <div>Career</div>
+          <div>Services</div>
+          <div>Subscription Packages</div>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-col gap-2 mb-4">
+          <div class="font-bold text-lg">Category</div>
+          <div class="border-b-2 border-red-500 w-[50%]"></div>
+        </div>
+        <div class="flex flex-col gap-2 text-base uppercase font-semibold">
+          <div>Join Us</div>
+          <div>Career</div>
+          <div>Services</div>
+          <div>Subscription Packages</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="./../scripts/index.js"></script>
+  <script src="./../scripts/bag.js"></script>
+</body>
+
+</html>
